@@ -1,0 +1,92 @@
+@import url(./fonts.css);
+@import url(./vars.css);
+@import url(./normalize.css);
+
+html,body {
+  font-family: var(--font-family-base);
+  scroll-behavior: smooth;
+  background-color: var(--light-color);
+  color: var(--dark-alt-color);
+  background-attachment: fixed;
+  min-width: 1440px;
+  width: auto;
+}
+
+.resotoApp-header {
+  display: flex;
+  height: 72px;
+  width: auto;
+  background-color: var(--yellow-color);
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 64px;
+}
+
+.resotoApp-header__menu {
+  display: flex;
+  gap: 24px;
+  font-family: var(--font-family-accent);
+  font-weight: 600;
+  }
+
+.header__menu-item {
+  font-size: 16px;
+}
+
+.resotoApp-header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__contacts-phone {
+  font-size: 18px;
+}
+
+.header__contacts-time {
+  font-size: 12px;
+  cursor: de;
+}
+
+.resotoApp-main {
+  padding-inline: 64px;
+  font-family: var(--font-family-accent);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+.resotoApp-main__title {
+  margin-block: 32px;
+  color: var(--dark-color);
+}
+
+.main__list {
+  display: flex;
+  gap: 32px;
+}
+
+.main__list-item {
+  width: 304px;
+  height: 304px;
+  border-radius: var(--border-radius);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.card-image {
+  border-radius: var(--border-radius);
+}
+
+.list-item__title {
+  font-size: 24px;
+  color: var(--light-color);
+  position: absolute;
+  padding: 0px 0px 10px 16px;
+}
