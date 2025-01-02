@@ -3,65 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RestoApp</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Resto App</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="restoApp">
-        <header class="resotoApp-header">
+        <div class="wrap">
+            <div class="container">
+                <header class="resotoApp-header">
+                    <a href="#" class="resotoApp-header__logo">
+                        <img src="./images/Logo.svg" alt="Логотип приложения">
+                    </a>
 
-            <div class="resotoApp-header__logo">
-                <img src="./public/Logo.svg" alt="Логотип приложения">
+                    <ul class="resotoApp-header__menu">
+
+                        <li class="resotoApp-header__menu-item"><a href="#">Меню</a></li>
+                        <li class="resotoApp-header__menu-item"><a href="#">Акции</a></li>
+                        <li class="resotoApp-header__menu-item"><a href="#">О нас</a></li>
+                        <li class="resotoApp-header__menu-item"><a href="#">События</a></li>
+                        <li class="resotoApp-header__menu-item"><a href="#">Зоны доставки</a></li>
+                    </ul>
+
+                    <div class="resotoApp-header__contacts">
+                        <a class="resotoApp-header__contacts-phone" href="tel:+01234567890">+0 (123) 456 78-90</a>
+                        <p class="resotoApp-header__contacts-time">Прием заказов с <time datetime="10:00">10:00</time> до <time datetime="22:40">22:40</time></p>
+                    </div>
+                </header>
             </div>
+        </div>
 
-            <ul class="resotoApp-header__menu">
-                <li class="resotoApp-header__menu-item"><a href="#">Меню</a></li>
-                <li class="resotoApp-header__menu-item"><a href="#">Акции</a></li>
-                <li class="resotoApp-header__menu-item"><a href="#">О нас</a></li>
-                <li class="resotoApp-header__menu-item"><a href="#">События</a></li>
-                <li class="resotoApp-header__menu-item"><a href="#">Зоны доставки</a></li>
-            </ul>
+        <div class="container">
+            <main class="resotoApp-main">
+                <h1 class="resotoApp-main__title">Меню</h1>
+                            <nav class="resotoApp-main__list">
 
-            <div class="resotoApp-header__contacts">
-                <a class="resotoApp-header__contacts-phone" href="tel:+01234567890">+0 (123) 456 78-90</a>
-               <p class="resotoApp-header__contacts-time">Прием заказов с <time datetime="10:00">10:00</time> до <time datetime="22:40">22:40</time></p>
-            </div>
-        </header>
+                    <a class="list-item" href="#">
 
-        <main class="resotoApp-main">
-            <h1 class="resotoApp-main__title">Меню</h1>
-                        <nav class="resotoApp-main__list">
+                        <img class="card-image" src="./images/food/pizza.jpg" alt="Пицца">
+                        <div class="list-item__title">Пицца</div>
 
-                            <a href="">
-                            <li class="list-item">
-                                <img class="card-image" src="./public/food/pizza.jpg" alt="Пицца">
-                                    <div class="list-item__title">Пицца</div>
-                            </li>
-                            </a>
+                    </a>
 
-                            <a href="">
-                            <li class="list-item">
-                                <img class="card-image" src="./public/food/soup.jpg" alt="Супчик">
-                                    <div class="list-item__title">Супы</div>
-                            </li>
-                            </a>
+                    <a class="list-item" href="#">
 
-                            <a href="">
-                            <li class="list-item">
-                                <img class="card-image" src="./public/food/hot dish.jpg" alt="Горячее блюдо">
-                                    <div class="list-item__title">Горячие блюда</div>
-                            </li>
-                            </a>
+                        <img class="card-image" src="./images/food/soup.jpg" alt="Супы">
+                        <div class="list-item__title">Супы</div>
 
-                            <a href="">
-                            <li class="list-item">
-                                <img class="card-image" src="./public/food/salad.jpg" alt="Салатик">
-                                    <div class="list-item__title">Салаты</div>
-                            </li>
-                            </a>
+                    </a>
 
-                        </nav>
-        </main>
+                    <a class="list-item" href="#">
+
+                        <img class="card-image" src="./images/food/hot dish.jpg" alt="Горячие блюда">
+                        <div class="list-item__title">Горячие блюда</div>
+
+                    </a>
+
+                    <a class="list-item" href="#">
+
+                        <img class="card-image" src="./images/food/salad.jpg" alt="Салат">
+                        <div class="list-item__title">Салат</div>
+
+                    </a>
+
+                    </nav>
+            </main>
+        </div>
         <footer class="resotoApp-footer"></footer>
     </div>
 </body>
