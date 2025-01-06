@@ -31,8 +31,14 @@ a {
 
   }
 
+button {
+  background-color: transparent;
+  border: none;
+}
 
-
+button:hover {
+  transition-duration: var(--transition-duration)
+}
 
 /**
   Убираем внешние отступы вертикали нужным тегам,
@@ -171,7 +177,7 @@ label {
 /**
   Приводим к единому цвету svg-элементы
  */
-[fill] { fill: currentColor }
+
 [stroke] { stroke: currentColor }
 
 /**

@@ -6,9 +6,10 @@
 --dark-color:#1c1c1c;
 --dark-alt-color:#555555;
 --light-color:#FFFFFF;
+--gray-alt: #727272;
 --border-radius: 16px;
 --border: none;
 --opacity-main:0.7;
---transition: 0.2s;
+--transition-duration: 0.3s;
 }
 
