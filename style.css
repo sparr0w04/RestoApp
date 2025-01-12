@@ -2,193 +2,208 @@
 @import url(./styles/vars.css);
 @import url(./styles/normalize.css);
 
-html,body {
-  font-family: var(--font-family-base);
-  scroll-behavior: smooth;
-  background-color: var(--light-color);
-  color: var(--dark-alt-color);
-  background-attachment: fixed;
-  min-width: 1440px;
-  width: auto;
-}
-
-
-
-.container {
-  max-width: 1460px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
-
+html,
+body {
+	font-family: var(--font-family-base);
+	scroll-behavior: smooth;
+	background-color: var(--light-color);
+	color: var(--dark-alt-color);
+	background-attachment: fixed;
+	min-width: 1440px;
+	width: auto;
 }
 
 .wrap {
-  background: linear-gradient(90deg, #fedd2c 0%, #f9c201 100%);
-  height: 74px;
-  display: flex;
-  align-items: center;
+	display: flex;
+	max-width: 1460px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 76px;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.resotoApp-header {
-  padding: 16px 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-
+.header {
+	background: linear-gradient(90deg, #fedd2c 0%, #f9c201 100%);
+	height: 72px;
+	display: flex;
+	align-items: center;
 }
 
-.resotoApp-header__menu {
-  display: flex;
-  gap: 24px;
-
+.header-menu {
+	display: flex;
+	gap: 24px;
+}
+.header-menu__item {
+	font-size: 16px;
+	font-weight: 600;
+}
+.header-menu__item:hover {
+	opacity: 0.7;
+	transition-duration: var(--transition-duration);
 }
 
-.resotoApp-header__menu-item {
-  font-size: 16px;
-  font-weight: 600;
-
+.header-info {
+	display: flex;
+	gap: 64px;
+	align-items: center;
 }
 
-.resotoApp-header__menu-item:hover {
-  opacity: 0.7;
-  transition-duration: var(--transition-duration);
+.header-info__contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.header-info__contacts-phone {
+	font-size: 18px;
+	font-weight: 600;
 }
 
-
-
-.resotoApp-header__contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.header-info__contacts-phone:hover {
+	opacity: 0.7;
+	transition-duration: var(--transition-duration);
 }
 
-.resotoApp-header__contacts-phone {
-  font-size: 18px;
-  font-weight: 600;
+.header-info__contacts-time {
+	font-size: 12px;
 }
 
-.resotoApp-header__contacts-time {
-  font-size: 12px;
+.main {
+	max-width: 1460px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 64px;
 }
 
-.resotoApp-main {
-  padding: 0px 64px;
+.main-headline {
+	margin-block: 32px;
+	color: var(--dark-color);
+	font-size: 40px;
+	font-family: var(--font-family-bold);
 }
 
-.resotoApp-main__headline {
-  margin-block: 32px;
-  color: var(--dark-color);
-  font-size: 40px;
-  font-weight: 600;
+.restoApp-main__title {
+	margin-block: 32px;
+	color: var(--dark-color);
 }
 
-
-.resotoApp-main__title {
-  margin-block: 32px;
-  color: var(--dark-color);
-
+.main-list {
+	display: flex;
+	gap: 32px;
 }
 
-.resotoApp-main__list {
-  display: flex;
-  gap: 32px;
+.main-list__item-menu {
+	width: 304px;
+	height: 304px;
+	border-radius: var(--border-radius);
+	position: relative;
 }
 
-.list-item {
-  width: 304px;
-  height: 304px;
-  border-radius: var(--border-radius);
-  position: relative;
+.main-list__item-menu:hover {
+	transition: var(--transition-duration);
+	transform: scale(1.02);
 }
 
-.card-image {
-  position: relative;
-  border-radius: var(--border-radius);
+.main-list__item {
+	width: 304px;
+	height: 304px;
+	border-radius: var(--border-radius);
+	position: relative;
 }
 
-.list-item:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
-    z-index: 2;
-    border-radius: var(--border-radius);
+.main-list__item:hover {
+	transition: var(--transition-duration);
+	transform: scale(1.02);
 }
 
-.list-item__title {
-  font-size: 24px;
-  color: var(--light-color);
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  font-weight: 600;
-  z-index: 3;
+.main-list__item-card {
+	position: relative;
+	border-radius: var(--border-radius);
 }
 
-.list-item-badges {
-  position: absolute;
-  z-index: 3;
-  top: 8px;
-  right: 8px;
+.main-list__item-menu:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 50%,
+		rgba(0, 0, 0, 0.5) 100%
+	);
+	z-index: 2;
+	border-radius: var(--border-radius);
 }
 
-.list-item__dish {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--dark-color);
-  margin-top: 16px;
+.main-list__item-title {
+	font-size: 24px;
+	color: var(--light-color);
+	position: absolute;
+	bottom: 16px;
+	left: 16px;
+	font-weight: 600;
+	z-index: 3;
 }
 
-.list-item__subtitle {
-  padding-top: 6px;
-  font-size: 16px;
-  color: var(--gray-alt);
-  margin: 0; /* Убираем внешний отступ */
-  -webkit-line-clamp: 2; /* Число отображаемых строк */
-  display: -webkit-box; /* Включаем флексбоксы */
-  -webkit-box-orient: vertical; /* Вертикальная ориентация */
-  overflow: hidden; /* Обрезаем всё за пределами блока */
+.main-list__item-badges {
+	position: absolute;
+	z-index: 3;
+	top: 8px;
+	right: 8px;
 }
 
-.list-item__button {
-  border-radius: 16px;
-  padding: 16px 24px;
-  width: 304px;
-  height: 56px;
-  background: #f4f4f4;
-  border: none;
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 16px;
+.main-list__dish {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--dark-color);
+	margin-top: 16px;
 }
 
-.list-item__button:hover {
-  transition-duration: var(--transition-duration);
-  background: linear-gradient(90deg, #fedd2c 0%, #f9c201 100%);
+.main-list__subtitle {
+	padding-top: 6px;
+	font-size: 16px;
+	color: var(--gray-alt);
+	margin: 0; /* Убираем внешний отступ */
+	-webkit-line-clamp: 2; /* Число отображаемых строк */
+	display: -webkit-box; /* Включаем флексбоксы */
+	-webkit-box-orient: vertical; /* Вертикальная ориентация */
+	overflow: hidden; /* Обрезаем всё за пределами блока */
 }
 
+.button {
+	border-radius: 16px;
+	padding: 16px 24px;
+	width: 304px;
+	height: 56px;
+	background: #f4f4f4;
+	border: none;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 16px;
+}
+
+.button:hover {
+	background: linear-gradient(90deg, #fedd2c 0%, #f9c201 100%);
+	transition: 0.9s;
+}
 
 .bubble {
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  font-size: 18px;
-  font-weight: 600;
-  padding: 12px 64px;
-  width: inherit;
-  height: 48px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  }
-
-
-.button__buttons-icon:hover {
-  opacity: 0.7;
-  transition-duration: var(--transition-duration);
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	font-size: 18px;
+	font-weight: 600;
+	padding: 12px 64px;
+	width: inherit;
+	height: 48px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 14px;
 }
 
+.bubble__button:hover {
+	opacity: 0.7;
+	transition-duration: var(--transition-duration);
+}
