@@ -1,16 +1,15 @@
 :root {
---font-family-base: 'Inter-Regular',sans-serif;
---font-family-bold: 'Inter-SemiBold',sans-serif;
---font-size-base : 24px;
---font--mini : 16px;
---font-size-XXL: 32px;
---dark-color:#1c1c1c;
---dark-alt-color:#555555;
---light-color:#FFFFFF;
---gray-alt: #727272;
---border-radius: 16px;
---border: none;
---opacity-main:0.7;
---transition-duration: 0.3s;
+	--font-family-base: 'Inter', sans-serif;
+	--font-family-bold: 'Inter', sans-serif;
+	--font-size-base: 24px;
+	--font--mini: 16px;
+	--font-size-XXL: 32px;
+	--dark-color: #1c1c1c;
+	--dark-alt-color: #555555;
+	--light-color: #ffffff;
+	--gray-alt: #727272;
+	--border-radius: 16px;
+	--border: none;
+	--opacity-main: 0.7;
+	--transition-duration: 0.3s;
 }
-

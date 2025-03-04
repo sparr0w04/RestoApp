@@ -25,7 +25,7 @@
         <a href="#" class="header__logo">
             <img src="./images/logo.svg" alt="Логотип приложения">
         </a>
-
+    <nav>
         <ul class="header-menu">
             <li class="header-menu__item"><a href="#">Меню</a></li>
             <li class="header-menu__item"><a href="#">Акции</a></li>
@@ -33,14 +33,15 @@
             <li class="header-menu__item"><a href="#">События</a></li>
             <li class="header-menu__item"><a href="#">Зоны доставки</a></li>
         </ul>
+    </nav>
 
     <div class="header-info">
-        <div class="header-info__contacts">
+        <address class="header-info__contacts">
             <a class="header-info__contacts-phone" href="tel:+01234567890">+0 (123) 456 78-90</a>
             <p class="header-info__contacts-time">Прием заказов с <time datetime="10:00:00">10:00</time> до <time datetime="22:40">22:40</time></p>
-        </div>
+        </address>
 
-            <div class="header-info__button">
+            <div class="header-info__byby">
         <button class="icon">
             <span>
                 <svg
@@ -108,7 +109,7 @@
         <ul class="main-list ">
         <li class="column">
             <a class="main-list__item position" href="#">
-                <img class="main-list__item-card" src="./images/new/Chinese-Egg.jpg" alt="яйца-китайцев">
+                <img class="main-list__item-card" src="./images/new/chinese-egg.jpg" alt="яйца-китайцев">
                 <span class="main-list__item-badges">
                     <svg
                         width="36" height="36" viewBox="0 0 36 36" fill="#1DAA0F" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +127,7 @@
 
             <li class="column">
                 <a class="main-list__item" href="#">
-                    <img class="card-image " src="./images/new/Paella.jpg" alt="паэлья">
+                    <img class="card-image " src="./images/new/paella.jpg" alt="паэлья">
                     <span class="main-list__item-badges">
                         <svg
                             width="36" height="36" viewBox="0 0 36 36" fill="#1DAA0F" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +145,7 @@
 
             <li class="column">
                 <a class="main-list__item" href="#">
-                    <img class="card-image " src="./images/new/beef-Bourguignon.jpg" alt="Биф Бургеньон">
+                    <img class="card-image " src="./images/new/beef-bourguignon.jpg" alt="Биф Бургеньон">
                 </a>
                 <a href="#">
                     <div class="main-list__dish">Биф Бургеньон</div>
@@ -155,7 +156,7 @@
 
             <li class="column">
                 <a class="main-list__item" href="#">
-                    <img class="card-image " src="./images/new/Broken-cucumbers.jpg" alt="Битые огурцы">
+                    <img class="card-image " src="./images/new/broken-cucumbers.jpg" alt="Битые огурцы">
                         <span class="main-list__item-badges">
                         <svg
                             width="36" height="36" viewBox="0 0 36 36" fill="#1DAA0F" xmlns="http://www.w3.org/2000/svg">
@@ -169,6 +170,7 @@
                             <div class="main-list__subtitle">Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжу <br> том</div>
                             <button class="button">320 ₽</button>
                         </a>
+                </li>
         </ul>
     </section>
 
@@ -226,16 +228,17 @@
                     <img class="card-image " src="./images/popular/tom-yam.jpg" alt="Том Ям с морепродуктами">
                     <span class="main-list__item-badges">
 
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8C0 3.58172 3.58172 0 8 0H28C32.4183 0 36 3.58172 36 8V28C36 32.4183 32.4183 36 28 36H8C3.58172 36 0 32.4183 0 28V8Z" fill="#FC7D04"/>
+                    <path d="M20.3336 18.2222V15.4183L18.6851 14.6614C16.8575 16.8359 16.1744 22.4999 11.7498 22.4999C11.2857 22.4999 10.8405 22.6842 10.5123 23.0124C10.1841 23.3406 9.99976 23.7858 9.99976 24.2499C9.99976 24.7141 10.1841 25.1592 10.5123 25.4874C10.8405 25.8156 11.2857 26 11.7498 26C18.3951 26 23.3331 22.1602 24.8497 19.4266L23.6919 18.2222H20.3336ZM24.4304 14.2104C25.4354 12.3404 24.9123 10.8269 24.3322 10.0931C24.3101 10.0656 24.2824 10.0432 24.251 10.0272C24.2196 10.0112 24.1852 10.002 24.1499 10.0003C24.1147 9.99856 24.0796 10.0043 24.0467 10.0171C24.0139 10.0299 23.9841 10.0495 23.9594 10.0747L23.2437 10.7934C23.2027 10.8352 23.1774 10.8899 23.1723 10.9483C23.1673 11.0066 23.1827 11.0649 23.2159 11.1131C23.4303 11.4369 23.7488 12.2101 23.1722 13.3732C22.6088 13.127 22.0007 12.9997 21.3859 12.9995C20.5108 12.9995 19.6983 13.2663 19.0001 13.7054L21.3337 14.777V17.2221H24.1178L25.8267 18.9997C25.9285 18.6053 26.0004 18.1987 26.0004 17.7712C26.001 17.1011 25.8617 16.4382 25.5913 15.8251C25.321 15.2119 24.9255 14.662 24.4304 14.2104Z" fill="white"/>
+                    </svg>
+
                 <svg
                 width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 8C0 3.58172 3.58172 0 8 0H28C32.4183 0 36 3.58172 36 8V28C36 32.4183 32.4183 36 28 36H8C3.58172 36 0 32.4183 0 28V8Z" fill="#0094E4"/>
                 <path d="M17.3282 13.5117C15.4867 13.6502 13.7099 14.2505 12.1617 15.2572C12.3642 14.4505 12.7929 13.7185 13.3975 13.1474C14.002 12.5762 14.7572 12.1897 15.5741 12.0334C15.7902 11.9899 16.0134 11.9958 16.227 12.0505C16.4406 12.1052 16.639 12.2075 16.8076 12.3495C16.9762 12.4916 17.1106 12.6699 17.2007 12.8711C17.2909 13.0724 17.3344 13.2913 17.3282 13.5117ZM25.7584 13.4964C25.5164 13.1653 25.2095 12.8871 24.8563 12.6786C24.5032 12.4701 24.1113 12.3358 23.7045 12.2839C23.6526 11.8771 23.5183 11.4852 23.3098 11.1321C23.1013 10.7789 22.8231 10.472 22.492 10.23C22.3222 10.1022 22.1202 10.0242 21.9086 10.0048C21.697 9.98532 21.4841 10.0252 21.2939 10.1198C21.1036 10.2145 20.9435 10.3603 20.8314 10.5408C20.7193 10.7213 20.6597 10.9295 20.6592 11.142V14.6629C15.6513 14.6629 12.794 15.6203 11.3077 18.1232C12.8849 18.5352 14.3237 19.3605 15.4756 20.5138C16.6276 21.6672 17.4511 23.107 17.8612 24.6847C20.3668 23.1991 21.3255 20.341 21.3255 15.3291L24.8464 15.3291C25.0589 15.3287 25.267 15.2691 25.4476 15.157C25.6281 15.0449 25.7739 14.8848 25.8686 14.6945C25.9632 14.5043 26.0031 14.2914 25.9836 14.0798C25.9642 13.8682 25.8862 13.6662 25.7584 13.4964ZM22.7911 18.6602H22.4747C22.3742 19.5629 22.1929 20.4547 21.933 21.325H22.4753C24.1322 21.3763 24.6645 18.7428 22.7911 18.6602ZM16.6293 25.263C15.0304 25.7213 12.2743 26.6907 10.78 25.2084C10.5117 24.9408 10.3037 24.6189 10.1702 24.2643C10.0367 23.9096 9.98065 23.5305 10.0059 23.1524C10.0677 21.8593 10.3101 20.5811 10.7261 19.355C12.1683 19.6802 13.4887 20.4079 14.5337 21.4537C15.5787 22.4996 16.3054 23.8205 16.6293 25.263ZM13.3309 23.3237C13.3309 23.147 13.2608 22.9775 13.1358 22.8526C13.0109 22.7276 12.8414 22.6574 12.6647 22.6574C12.488 22.6574 12.3186 22.7276 12.1937 22.8526C12.0687 22.9775 11.9985 23.147 11.9985 23.3237C11.9985 23.5003 12.0687 23.6698 12.1937 23.7947C12.3186 23.9197 12.488 23.9899 12.6647 23.9899C12.8414 23.9899 13.0109 23.9197 13.1358 23.7947C13.2608 23.6698 13.3309 23.5003 13.3309 23.3237Z" fill="white"/>
                 </svg>
 
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 8C0 3.58172 3.58172 0 8 0H28C32.4183 0 36 3.58172 36 8V28C36 32.4183 32.4183 36 28 36H8C3.58172 36 0 32.4183 0 28V8Z" fill="#FC7D04"/>
-                <path d="M20.3336 18.2222V15.4183L18.6851 14.6614C16.8575 16.8359 16.1744 22.4999 11.7498 22.4999C11.2857 22.4999 10.8405 22.6842 10.5123 23.0124C10.1841 23.3406 9.99976 23.7858 9.99976 24.2499C9.99976 24.7141 10.1841 25.1592 10.5123 25.4874C10.8405 25.8156 11.2857 26 11.7498 26C18.3951 26 23.3331 22.1602 24.8497 19.4266L23.6919 18.2222H20.3336ZM24.4304 14.2104C25.4354 12.3404 24.9123 10.8269 24.3322 10.0931C24.3101 10.0656 24.2824 10.0432 24.251 10.0272C24.2196 10.0112 24.1852 10.002 24.1499 10.0003C24.1147 9.99856 24.0796 10.0043 24.0467 10.0171C24.0139 10.0299 23.9841 10.0495 23.9594 10.0747L23.2437 10.7934C23.2027 10.8352 23.1774 10.8899 23.1723 10.9483C23.1673 11.0066 23.1827 11.0649 23.2159 11.1131C23.4303 11.4369 23.7488 12.2101 23.1722 13.3732C22.6088 13.127 22.0007 12.9997 21.3859 12.9995C20.5108 12.9995 19.6983 13.2663 19.0001 13.7054L21.3337 14.777V17.2221H24.1178L25.8267 18.9997C25.9285 18.6053 26.0004 18.1987 26.0004 17.7712C26.001 17.1011 25.8617 16.4382 25.5913 15.8251C25.321 15.2119 24.9255 14.662 24.4304 14.2104Z" fill="white"/>
-                </svg>
                     </span>
                 </a>
                 <a href="#">
@@ -247,8 +250,96 @@
             </li>
         </ul>
         </section>
-    </div>
-</main>
 
+    <section class="container">
+        <h2 class="main-headline">Акции</h2>
+        <ul class="main-list">
+
+            <li class="main-item">
+                <a href="#">
+                    <img src="./images/sale/platinum.jpg" alt="платина">
+                    <div class="tags">
+                        <span class="tag">Скидка 10%</span>
+                    </div>
+                    <span class="status">Positive</span>
+                    <div class="title">Статус «Platina» <br> привилегированным клиентам</div>
+                </a>
+            </li>
+
+            <li class="main-item">
+                <a href="#">
+                    <img src="./images/sale/package.jpg" alt="пакеты">
+                    <div class="tags">
+                        <span class="tag">Скидка 5%</span>
+                    </div>
+                        <span class="status">Positive</span>
+                    <div class="title">Скидка на все покупки при регистрации</div>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+    <section class="container">
+        <h2 class="main-headline">События</h2>
+        <ul class="main-list last-child">
+
+            <li class="main-item">
+                <a href="#">
+                    <img src="./images/events/stand-up.jpg" alt="стэндапчик">
+                    <div class="tags">
+                        <span class="tag">27 января</span>
+                        <span class="tag">В 21:00</span>
+                    </div>
+                    <span class="status">Скоро</span>
+                    <div class="title">Первый в этом году Stand-Up</div>
+                </a>
+            </li>
+
+            <li class="main-item">
+                <a href="#">
+                    <img src="./images/events/birthday.jpg" alt="днюха">
+                    <div class="tags">
+                        <span class="tag">21 января</span>
+                        <span class="tag">Скидка 20%</span>
+                    </div>
+                        <span class="status completed">Завершено</span>
+                    <div class="title ">День рождения в «Гастроцех»</div>
+                </a>
+            </li>
+        </ul>
+        <button class="main-button">Все события</button>
+    </section>
+
+    <section class="container">
+        <h2 class="main-headline">Наши заведения</h2>
+        <ul class="main-list last-child">
+
+            <li class="main-item">
+                <a href="#">
+                    <img src="./images/about-us/food-court.jpg" alt="фудкорт">
+                    <div class="tags">
+                        <span class="tag">Открыт еще 1 ч 20 мин</span>
+                        <span class="tag">с 10:00 до 23:00</span>
+                    </div>
+                    <span class="status">Открыт</span>
+                    <div class="title">Фудкорт — Кафе «Гастроцех»</div>
+                </a>
+            </li>
+
+            <li class="main-item">
+                <a href="#">
+                    <img src="./images/about-us/pizzeria.jpg" alt="пиццуха">
+                    <div class="tags">
+                        <span class="tag">Открыт еще 1 ч 20 мин</span>
+                        <span class="tag">с 10:00 до 23:00</span>
+                    </div>
+                        <span class="status ">Открыт</span>
+                    <div class="title ">«Гастроцех» Пицца</div>
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>
 </body>
 </html>

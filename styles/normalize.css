@@ -34,7 +34,7 @@ a {
 	max-width: 1460px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0px 10px 10px 0px;
 }
 
 .position {
@@ -46,14 +46,23 @@ button {
 	border: none;
 }
 
+.completed {
+	background: var(--gray-alt) !important;
+	color: var(--light-color) !important;
+}
+
 .icon:hover {
 	opacity: 0.7;
 	transition-duration: var(--transition-duration);
 }
 
-button:hover {
-	transition-duration: var(--transition-duration);
+.last-child {
+	margin-bottom: 32px;
 }
+
+/* button:hover {
+	transition-duration: var(--transition-duration);
+} */
 
 /**
   Убираем внешние отступы вертикали нужным тегам,
