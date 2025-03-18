@@ -1,0 +1,133 @@
+.footer {
+	background-color: var(--dark-color);
+	padding: 32px 64px;
+	color: var(--footer-color);
+	font-size: 14px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.row {
+	width: 1336px;
+	height: 56px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mobile-buttons {
+	display: flex;
+	gap: 8px;
+}
+
+.footer-contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.footer-contacts__phone {
+	color: var(--light-color);
+	font-size: 24px;
+	font-weight: 600;
+	transition-duration: var(--transition-duration);
+}
+
+.footer-contacts__phone:hover {
+	opacity: 0.7;
+}
+
+.footer-contacts__time {
+	font-size: 12px;
+}
+
+.footer-icons {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+}
+
+.footer-menu {
+	display: flex;
+	gap: 36px;
+	align-items: center;
+}
+
+.footer-menu__item {
+	color: var(--light-color);
+	font-size: 16px;
+	font-weight: 600;
+	transition-duration: var(--transition-duration);
+}
+.footer-menu__item:hover {
+	opacity: var(--opacity-main);
+}
+
+.link-items {
+	display: flex;
+	gap: 16px;
+	transition-duration: var(--transition-duration);
+}
+
+.link {
+	transition-duration: var(--transition-duration);
+}
+
+.link:hover {
+	opacity: var(--opacity-main);
+}
+
+.pay {
+	display: flex;
+	gap: 8px;
+}
+
+.card {
+	border-radius: 4px;
+	padding: 4px 8px;
+	width: 48px;
+	height: 29px;
+	background-color: var(--border-top);
+	transition-duration: var(--transition-duration);
+}
+
+.card:hover {
+	opacity: var(--opacity-main);
+}
+
+.pay:hover {
+}
+
+.preax {
+	display: flex;
+	justify-content: center;
+	width: inherit;
+	height: 64px;
+	align-items: flex-end;
+	border-top: 1px solid var(--border-top);
+	gap: 5px;
+}
+
+.preax-link {
+	text-decoration: underline;
+	transition-duration: var(--transition-duration);
+}
+
+.preax-link:hover {
+	color: #9333ea;
+}
+
+.icon {
+	border-radius: 8px;
+	padding: 8px;
+	width: 40px;
+	height: 40px;
+	background-color: var(--border-top);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition-duration: var(--transition-duration);
+}
