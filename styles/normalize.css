@@ -31,10 +31,9 @@ a {
 }
 
 .container {
-	max-width: 1460px;
-	width: 100%;
+	width: 1314px;
 	margin: 0 auto;
-	margin-block: -3px;
+	margin-block: -1.4px;
 }
 
 .position {
@@ -47,7 +46,12 @@ button {
 }
 
 .none {
+	fill: var(--light-color) !important;
 	margin-left: 0px !important;
+}
+
+.hot {
+	right: 43px;
 }
 
 span {
@@ -59,7 +63,13 @@ span {
 }
 
 .dark {
+	fill: var(--light-color);
 	background-color: var(--dark-color);
+}
+
+.dark:hover {
+	fill: var(--dark-color) !important;
+	background-color: var(--light-color) !important;
 }
 
 .nav {
@@ -71,13 +81,12 @@ span {
 	color: var(--light-color) !important;
 }
 
-.icon:hover {
-	opacity: 0.7;
-	transition-duration: var(--transition-duration);
+.last-child {
+	margin-bottom: 52px;
 }
 
-.last-child {
-	margin-bottom: 25px;
+.inherit {
+	height: inherit;
 }
 
 .visually-hidden {
@@ -230,6 +239,14 @@ label {
  */
 svg * {
 	transition-property: fill, stroke;
+}
+
+svg {
+	transition: var(--transition-duration);
+}
+
+svg:hover {
+	color: var(--light-color);
 }
 
 /**

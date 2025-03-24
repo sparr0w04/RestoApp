@@ -1,6 +1,7 @@
 .footer {
 	background-color: var(--dark-color);
-	padding: 32px 64px;
+
+	padding: 33px 63px;
 	color: var(--footer-color);
 	font-size: 14px;
 }
@@ -13,10 +14,11 @@
 
 .row {
 	width: 1336px;
-	height: 56px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-left: 19px;
 }
 
 .mobile-buttons {
@@ -30,21 +32,21 @@
 	align-items: flex-start;
 }
 .footer-contacts__phone {
-	color: var(--light-color);
 	font-size: 24px;
 	font-weight: 600;
 	transition-duration: var(--transition-duration);
 }
 
 .footer-contacts__phone:hover {
-	opacity: 0.7;
+	color: var(--light-color);
 }
 
 .footer-contacts__time {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .footer-icons {
+	padding-top: 10px;
 	display: flex;
 	justify-content: flex-end;
 	gap: 8px;
@@ -52,18 +54,18 @@
 
 .footer-menu {
 	display: flex;
-	gap: 36px;
+	gap: 32px;
 	align-items: center;
+	padding-left: 142px;
 }
 
 .footer-menu__item {
-	color: var(--light-color);
 	font-size: 16px;
 	font-weight: 600;
 	transition-duration: var(--transition-duration);
 }
 .footer-menu__item:hover {
-	opacity: var(--opacity-main);
+	color: var(--light-color);
 }
 
 .link-items {
@@ -77,7 +79,7 @@
 }
 
 .link:hover {
-	opacity: var(--opacity-main);
+	color: var(--light-color);
 }
 
 .pay {
@@ -92,37 +94,33 @@
 	height: 29px;
 	background-color: var(--border-top);
 	transition-duration: var(--transition-duration);
-}
-
-.card:hover {
-	opacity: var(--opacity-main);
-}
-
-.pay:hover {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .preax {
 	display: flex;
 	justify-content: center;
 	width: inherit;
-	height: 64px;
+	height: 60px;
 	align-items: flex-end;
 	border-top: 1px solid var(--border-top);
 	gap: 5px;
 }
 
 .preax-link {
+	text-underline-offset: 5px;
 	text-decoration: underline;
 	transition-duration: var(--transition-duration);
 }
 
 .preax-link:hover {
-	color: #9333ea;
+	color: var(--light-color);
 }
 
-.icon {
+.footer-icons__item {
 	border-radius: 8px;
-	padding: 8px;
 	width: 40px;
 	height: 40px;
 	background-color: var(--border-top);
@@ -130,4 +128,22 @@
 	align-items: center;
 	justify-content: center;
 	transition-duration: var(--transition-duration);
+}
+
+.icon {
+	fill: var(--footer-color);
+	height: 24px;
+}
+
+.icon:hover {
+	fill: var(--light-color);
+}
+
+.shop {
+	transition: var(--transition-duration);
+	opacity: var(--opacity-main);
+}
+
+.shop:hover {
+	opacity: 1;
 }
