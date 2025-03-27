@@ -6,13 +6,18 @@
 		<title>Resto App</title>
 		<link rel="stylesheet" href="./style.css" />
 		<script src="./script.js" defer></script>
+		<link
+			rel="shortcut icon"
+			href="./images/icons/sprite.svg"
+			type="image/x-icon"
+		/>
 	</head>
 	<body>
 		<div class="bubble" id="bubble">
 			<p>Бесплатная доставка &nbsp;от&nbsp;1&nbsp;000&nbsp;&nbsp;₽</p>
 			<button id="crest" aria-label="Закрыть">
 				<svg class="bubble__button">
-					<use href="../images/icons/sprite.svg#x-mark"></use>
+					<use href="/images/icons/sprite.svg#x-mark"></use>
 				</svg>
 			</button>
 		</div>
@@ -22,7 +27,7 @@
 				<a href="#">
 					<h1 class="visually-hidden">Сайт ресторана</h1>
 					<svg class="logo">
-						<use href="./images/icons/sprite.svg#logo"></use>
+						<use xlink:href="./images/icons/sprite.svg#logo"></use>
 					</svg>
 				</a>
 				<nav class="nav">
@@ -53,7 +58,7 @@
 							class="button-byby account"
 						>
 							<svg class="inherit">
-								<use href="./images/icons/sprite.svg#stroke"></use>
+								<use href="images/icons/sprite.svg#stroke"></use>
 							</svg>
 						</button>
 						<button
@@ -62,7 +67,7 @@
 							class="button-byby dark"
 						>
 							<svg class="inherit">
-								<use href="./images/icons/sprite.svg#basket"></use>
+								<use href="../images/icons/sprite.svg#basket"></use>
 							</svg>
 						</button>
 					</div>
