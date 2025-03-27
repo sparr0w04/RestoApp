@@ -1,5 +1,5 @@
 .main {
-	max-width: 1460px;
+	max-width: 1480px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 6px 80px;
@@ -9,7 +9,7 @@
 }
 
 .main-headline {
-	margin-block: 32px;
+	margin-block: 34px;
 	color: var(--dark-color);
 	font-size: 40px;
 	font-family: var(--font-family-bold);
@@ -23,7 +23,7 @@
 
 .main-list {
 	display: flex;
-	gap: 34px;
+	gap: 37px;
 }
 
 .main-list__item-menu {
@@ -108,13 +108,13 @@
 }
 
 .main-list__subtitle {
-	font-size: 16px;
+	font-size: 17px;
 	color: var(--gray-alt);
-	margin: 0; /* Убираем внешний отступ */
-	-webkit-line-clamp: 2; /* Число отображаемых строк */
-	display: -webkit-box; /* Включаем флексбоксы */
-	-webkit-box-orient: vertical; /* Вертикальная ориентация */
-	overflow: hidden; /* Обрезаем всё за пределами блока */
+	padding-top: 15px;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .button {
@@ -140,8 +140,8 @@
 
 .main-item-image {
 	border-radius: 16px;
-	width: 640px;
-	height: 360px;
+	width: 650px;
+	height: auto;
 }
 
 .main-item:after {
@@ -200,8 +200,8 @@
 }
 
 .title {
-	bottom: 35px;
-	left: 35px;
+	bottom: 25px;
+	left: 32px;
 	position: absolute;
 	font-family: var(--font-family-base);
 	font-weight: 600;

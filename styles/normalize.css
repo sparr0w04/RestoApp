@@ -28,10 +28,11 @@ a {
 	text-decoration: none;
 	color: inherit;
 	font-family: var(--font-family-base);
+	line-height: 133%;
 }
 
 .container {
-	width: 1314px;
+	width: 1320px;
 	margin: 0 auto;
 	margin-block: -1.4px;
 }
@@ -73,6 +74,7 @@ span {
 }
 
 .nav {
+	padding-right: 15px;
 	display: flex;
 }
 

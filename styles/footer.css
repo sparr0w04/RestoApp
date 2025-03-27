@@ -1,20 +1,19 @@
 .footer {
 	background-color: var(--dark-color);
-
-	padding: 33px 63px;
+	padding-block: 33px;
 	color: var(--footer-color);
 	font-size: 14px;
 }
 
 .content {
+	width: 1460px;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
 }
 
 .row {
-	width: 1336px;
-
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

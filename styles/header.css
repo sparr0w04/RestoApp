@@ -8,10 +8,8 @@ header {
 .logo {
 	display: flex;
 	height: 24px;
-	margin-left: 20px;
-	height: 25px;
 	width: 137px;
-	fill: var(--dark-color);
+	margin-left: 9px;
 }
 
 .bubble {
@@ -20,7 +18,7 @@ header {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 133%;
-	padding-left: 30px;
+	padding-left: 25px;
 	align-items: center;
 	width: inherit;
 	height: 48px;
@@ -40,9 +38,15 @@ header {
 	opacity: var(--opacity-main);
 }
 
+.hidden {
+	transition: var(--transition-duration);
+	height: 0;
+	overflow: hidden;
+}
+
 .header-menu {
 	display: flex;
-	gap: 24px;
+	gap: 26px;
 	align-items: center;
 }
 
@@ -68,7 +72,7 @@ header {
 	align-items: flex-end;
 }
 .header-info__contacts-phone {
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 600;
 	transition-duration: var(--transition-duration);
 }

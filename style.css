@@ -24,4 +24,5 @@ body {
 	padding: 0px 60px;
 	align-items: center;
 	justify-content: space-between;
+	overflow: hidden;
 }

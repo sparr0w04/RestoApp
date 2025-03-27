@@ -1,9 +1,6 @@
-let isVisible = true
-const div = document.getElementById('bubble')
+const bubble = document.querySelector('.bubble')
+const Button = document.querySelector('.bubble__button')
 
-function trigger() {
-	isVisible = !isVisible
-	div.style.display = isVisible ? 'block' : 'none'
-}
-
-document.getElementById('crest').addEventListener('click', trigger)
+Button.addEventListener('click', () => {
+	bubble.classList.add('hidden')
+})
